@@ -1,0 +1,186 @@
+.logo-placeholder {
+  width: 325px;
+  height: 67px;
+  padding: 20px 0px;
+  border-radius: 12px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-placeholder {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.title-placeholder .subtitle {
+  font-size: 1.2rem;
+  color: #b0b8d1;
+  font-weight: normal;
+}
+
+.menu-placeholder {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #22305a;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+.contact-placeholder {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  color: #fff;
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+.datetime-placeholder {
+  display: block;
+  font-size: 1rem;
+  color: #b0b8d1;
+  margin-top: 5px;
+}
+
+/* Global Sidebar */
+.sidebar {
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  z-index: 1000;
+  padding: 12px 8px;
+  background: #172855;
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+}
+
+.sidebar-item {
+  width: 40px;
+  height: 40px;
+  background: #22305a;
+  color: #b0b8d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.sidebar-item:hover {
+  background: #2a3b6e;
+  color: #30457d;
+  transform: scale(1.1);
+}
+
+.sidebar-item.active {
+  background: #30457d;
+}
+
+.sidebar-item i {
+  font-style: normal;
+}
+
+/* Bottom Elements */
+.bottom-left-placeholder {
+  position: fixed;
+  left: 30px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+.bottom-left-placeholder .subtext {
+  font-size: 0.85rem;
+  color: #b0b8d1;
+  display: block;
+  text-align: center;
+}
+
+.bottom-right-placeholder {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.8;
+  text-align: right;
+  z-index: 100;
+}
+
+.bottom-right-placeholder .subtext {
+  font-size: 0.85rem;
+  color: #b0b8d1;
+  display: block;
+}
+
+.vertical-bullets {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 60px;
+  background: #162143;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.vertical-bullets ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+}
+
+.vertical-bullets .bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7b859e;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.vertical-bullets .bullet.active {
+  background: #e4b056;
+  box-shadow: 0 0 0 4px rgba(228, 176, 86, 0.2);
+}
+.mobile-header {
+  display: none;
+}
+
+.vertical-bullets {
+  height: calc(100vh - 49px) !important;
+  top: 49px !important;
+  width: 40px;
+}
+
+@media (max-width: 900px) {
+  /* Remove contact-footer-container responsive styles from here */
+}
